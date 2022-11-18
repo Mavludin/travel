@@ -1,6 +1,7 @@
 import 'antd/dist/reset.css';
 import './App.css';
 import { Booking } from './components/Booking/Booking';
+import { Destinations } from './components/Destinations/Destinations';
 import { Header } from './components/Header/Header';
 import { NavBar } from './components/NavBar/NavBar';
 import { TopCarousel } from './components/TopCarousel/TopCarousel';
@@ -12,6 +13,7 @@ function App() {
       <NavBar />
       <TopCarousel />
       <Booking />
+      <Destinations />
     </div>
   );
 }
