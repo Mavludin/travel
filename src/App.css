@@ -9784,3 +9784,45 @@ ul.slider {
 .whereTo {
   font-size: 24px;
 }
+
+.css-319lph-ValueContainer {
+  height: 45px;
+}
+
+.ant-picker {
+  width: 100%;
+  height: 45px;
+}
+
+.ant-select-selector {
+  height: 45px;
+}
+
+.ant-select-selection-item-remove {
+  display: flex !important;
+}
+
+.ant-select-clear {
+  transform: translateY(-50%) !important;
+  margin-top: 0 !important;
+}
+
+.ant-select-clear .anticon {
+  vertical-align: unset;
+}
+
+.ant-input-number {
+  width: 100%;
+}
+
+input.ant-input-number-input {
+  height: 42px !important;
+}
+
+.mainSearch {
+  border-radius: 6px;
+}
+
+.searchSubmit {
+  border-radius: 6px;
+}
