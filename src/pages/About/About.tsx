@@ -1,6 +1,5 @@
-import img1 from '../../assets/img/about-1.jpg';
-import img2 from '../../assets/img/about-2.jpg';
-import aboutImg from '../../assets/img/about.jpg';
+import img2 from '../../assets/img/destination-3.jpg';
+import aboutImg from '../../assets/img/destination-5.jpg';
 
 export const About = () => {
   return (
@@ -23,27 +22,21 @@ export const About = () => {
                   className='text-primary text-uppercase'
                   style={{ letterSpacing: 5 }}
                 >
-                  About Us
+                  О нас
                 </h6>
                 <h1 className='mb-3'>
-                  We Provide Best Tour Packages In Your Budget
+                  Путешествуй без границ
                 </h1>
                 <p>
-                  Dolores lorem lorem ipsum sit et ipsum. Sadip sea amet diam
-                  dolore sed et. Sit rebum labore sit sit ut vero no sit. Et
-                  elitr stet dolor sed sit et sed ipsum et kasd ut. Erat duo eos
-                  et erat sed diam duo
+                  Вместе с нами будет намного легче!
                 </p>
-                <div className='row mb-4'>
-                  <div className='col-6'>
-                    <img className='img-fluid' src={img1} alt='' />
-                  </div>
-                  <div className='col-6'>
+                <div className='mb-4 d-flex justify-content-center'>
+                  <div className='col-11'>
                     <img className='img-fluid' src={img2} alt='' />
                   </div>
                 </div>
                 <a href='' className='btn btn-primary mt-1'>
-                  Book Now
+                  Поехали!
                 </a>
               </div>
             </div>
@@ -51,7 +44,7 @@ export const About = () => {
         </div>
       </div>
       <div className='container-fluid pb-5'>
-        <div className='container pb-5'>
+        <div className='container pb-5 pt-5'>
           <div className='row'>
             <div className='col-md-4'>
               <div className='d-flex mb-4 mb-lg-0'>
@@ -62,10 +55,9 @@ export const About = () => {
                   <i className='fa fa-2x fa-money-check-alt text-white'></i>
                 </div>
                 <div className='d-flex flex-column'>
-                  <h5 className=''>Competitive Pricing</h5>
+                  <h5 className=''>Доступно</h5>
                   <p className='m-0'>
-                    Magna sit magna dolor duo dolor labore rebum amet elitr est
-                    diam sea
+                    С нами можно спланировать отпуск на любой бюджет
                   </p>
                 </div>
               </div>
@@ -79,10 +71,9 @@ export const About = () => {
                   <i className='fa fa-2x fa-award text-white'></i>
                 </div>
                 <div className='d-flex flex-column'>
-                  <h5 className=''>Best Services</h5>
+                  <h5 className=''>Удобно</h5>
                   <p className='m-0'>
-                    Magna sit magna dolor duo dolor labore rebum amet elitr est
-                    diam sea
+                    Наш сервис позволяет максимально быстро и просто получить ответы
                   </p>
                 </div>
               </div>
@@ -96,10 +87,9 @@ export const About = () => {
                   <i className='fa fa-2x fa-globe text-white'></i>
                 </div>
                 <div className='d-flex flex-column'>
-                  <h5 className=''>Worldwide Coverage</h5>
+                  <h5 className=''>Надежно</h5>
                   <p className='m-0'>
-                    Magna sit magna dolor duo dolor labore rebum amet elitr est
-                    diam sea
+                    Нас выбирают путешественники со всеx уголков России
                   </p>
                 </div>
               </div>
