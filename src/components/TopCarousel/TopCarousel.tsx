@@ -7,9 +7,9 @@ import { PrevArrow } from "../PrevArrow/PrevArrow";
 const CAROUSEL_ITEMS = [
   {
     id: 1,
-    subTitle: 'Tours & Travel',
-    title: "Let's Discover The World Together",
-    imgSrc: require('../../assets/img/carousel-1.jpg'),
+    subTitle: 'Оптимальные маршруты',
+    title: "Путешествие по Дагестану",
+    imgSrc: require('../../assets/img/carousel-3.jpg'),
   },
   {
     id: 2,
@@ -19,7 +19,11 @@ const CAROUSEL_ITEMS = [
   },
 ]
 
-export const TopCarousel = () => {
+type Props = {
+  scrollToBooking: () => void;
+}
+
+export const TopCarousel = ({ scrollToBooking }: Props): JSX.Element => {
 
   const [currentItem, setCurrentItem] = useState(0);
 
@@ -79,6 +83,7 @@ export const TopCarousel = () => {
                     imgSrc={item.imgSrc}
                     title={item.title}
                     subTitle={item.subTitle}
+                    scrollToBooking={scrollToBooking}
                   />
                 </div>
               );

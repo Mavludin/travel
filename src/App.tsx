@@ -1,6 +1,7 @@
 import 'antd/dist/reset.css';
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
+import { useRef } from 'react';
 import './App.css';
 import { Booking } from './components/Booking/Booking';
 import { Destinations } from './components/Destinations/Destinations';
@@ -10,12 +11,21 @@ import { Testimonials } from './components/Testimonials/Testimonials';
 import { TopCarousel } from './components/TopCarousel/TopCarousel';
 
 function App() {
+
+  const bookingRef = useRef<HTMLDivElement>(null);
+
+  const scrollToBooking = () => {
+    if (!bookingRef.current) return;
+
+    bookingRef.current.scrollIntoView({ behavior: "smooth", block: "center" });
+  };
+
   return (
     <div className="App">
       <Header />
       <NavBar />
-      <TopCarousel />
-      <Booking />
+      <TopCarousel scrollToBooking={scrollToBooking} />
+      <Booking ref={bookingRef} />
       <Destinations />
       <Testimonials />
     </div>

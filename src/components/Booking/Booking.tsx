@@ -1,10 +1,11 @@
 import { CustomSelect } from '../CustomSelect/CustomSelect';
 import { CustomDatePicker } from '../CustomDatePicker/CustomDatePicker';
 import { InputNumber } from 'antd';
+import { forwardRef } from 'react';
 
-export const Booking = () => {
+export const Booking = forwardRef((props, ref: any) => {
   return (
-    <div className='container-fluid booking mt-5 pb-5'>
+    <div ref={ref} className='container-fluid booking mt-5 pb-5'>
       <div className='container pb-5'>
         <div className='bg-light shadow mainSearch' style={{ padding: 30 }}>
           <div className='row align-items-center' style={{ minHeight: 60 }}>
@@ -58,4 +59,4 @@ export const Booking = () => {
       </div>
     </div>
   );
-};
+});

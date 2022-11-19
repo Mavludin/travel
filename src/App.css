@@ -9826,3 +9826,12 @@ input.ant-input-number-input {
 .searchSubmit {
   border-radius: 6px;
 }
+
+.sliderBtn {
+  font-size: 20px;
+  border-radius: 6px;
+}
+
+.carousel-inner {
+  height: 1000px;
+}
