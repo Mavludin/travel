@@ -11,7 +11,7 @@ export const Destinations = () => {
         <div className="container pt-5 pb-3">
             <div className="text-center mb-3 pb-3">
                 <h6 className="text-primary text-uppercase" style={{ letterSpacing: 5 }}>Destination</h6>
-                <h1>Explore Top Destination</h1>
+                <h1>Популярные направления</h1>
             </div>
             <div className="row">
                 <div className="col-lg-4 col-md-6 mb-4">
@@ -19,7 +19,7 @@ export const Destinations = () => {
                         <img className="img-fluid" src={dest1} alt="" />
                         <a className="destination-overlay text-white text-decoration-none" href="">
                             <h5 className="text-white">United States</h5>
-                            <span>100 Cities</span>
+                            
                         </a>
                     </div>
                 </div>
@@ -28,7 +28,7 @@ export const Destinations = () => {
                         <img className="img-fluid" src={dest2} alt="" />
                         <a className="destination-overlay text-white text-decoration-none" href="">
                             <h5 className="text-white">United Kingdom</h5>
-                            <span>100 Cities</span>
+                            
                         </a>
                     </div>
                 </div>
@@ -37,7 +37,7 @@ export const Destinations = () => {
                         <img className="img-fluid" src={dest3} alt="" />
                         <a className="destination-overlay text-white text-decoration-none" href="">
                             <h5 className="text-white">Australia</h5>
-                            <span>100 Cities</span>
+                            
                         </a>
                     </div>
                 </div>
@@ -46,7 +46,7 @@ export const Destinations = () => {
                         <img className="img-fluid" src={dest4} alt="" />
                         <a className="destination-overlay text-white text-decoration-none" href="">
                             <h5 className="text-white">India</h5>
-                            <span>100 Cities</span>
+                            
                         </a>
                     </div>
                 </div>
@@ -55,7 +55,7 @@ export const Destinations = () => {
                         <img className="img-fluid" src={dest5} alt="" />
                         <a className="destination-overlay text-white text-decoration-none" href="">
                             <h5 className="text-white">South Africa</h5>
-                            <span>100 Cities</span>
+                            
                         </a>
                     </div>
                 </div>
@@ -64,7 +64,7 @@ export const Destinations = () => {
                         <img className="img-fluid" src={dest6} alt="" />
                         <a className="destination-overlay text-white text-decoration-none" href="">
                             <h5 className="text-white">Indonesia</h5>
-                            <span>100 Cities</span>
+                            
                         </a>
                     </div>
                 </div>
