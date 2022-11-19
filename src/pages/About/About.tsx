@@ -5,7 +5,7 @@ import aboutImg from '../../assets/img/about.jpg';
 export const About = () => {
   return (
     <>
-      <div className='container-fluid py-5'>
+      <div className='container-fluid py-4'>
         <div className='container pt-5'>
           <div className='row'>
             <div className='col-lg-6' style={{ minHeight: 500 }}>

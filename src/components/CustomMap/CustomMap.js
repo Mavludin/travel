@@ -54,7 +54,7 @@ export const CustomMap = () => {
   };
 
   return (
-    <div className="container-fluid py-5">
+    <div className="container-fluid py-4">
       <div className="container pb-3">
         <YMaps query={{ apikey: "8595d4e3-4126-4f14-9243-7ff34406a783" }}>
           <Map

@@ -7,7 +7,7 @@ import dest6 from '../../assets/img/destination-6.jpg';
 
 export const Destinations = () => {
   return (
-    <div className="container-fluid py-5">
+    <div className="container-fluid py-4">
         <div className="container pt-5 pb-3">
             <div className="text-center mb-3 pb-3">
                 <h6 className="text-primary text-uppercase" style={{ letterSpacing: 5 }}>Вы можете выбрать</h6>

@@ -2,8 +2,8 @@ import React from 'react';
 
 export const Contact = () => {
   return (
-    <div className='container-fluid py-5'>
-      <div className='container py-5'>
+    <div className='container-fluid py-4'>
+      <div className='container py-4'>
         <div className='text-center mb-3 pb-3'>
           <h6
             className='text-primary text-uppercase'
