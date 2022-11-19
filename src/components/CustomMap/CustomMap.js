@@ -1,73 +1,160 @@
-import { useRef, useState } from "react";
-import {
-  YMaps,
-  Map,
-  ZoomControl,
-  SearchControl,
-  RouteButton,
-} from "react-yandex-maps";
+import { useEffect, useRef, useState } from 'react';
+import { YMaps, Map, ZoomControl, SearchControl } from 'react-yandex-maps';
 
-export const CustomMap = () => {
+export const CustomMap = ({
+  showMap,
+  selectedData,
+  setRouteData,
+  setIsMapLoading,
+}) => {
   const map = useRef(null);
   const mapState = {
     center: [42.9831, 47.504745],
     zoom: 10,
   };
 
-  const onLoad = (ymaps) => {
-    ymaps.geolocation
+  const [yyy, setYyy] = useState();
+  const [mmm, setMMM] = useState();
+
+  useEffect(() => {
+    if (!yyy) return;
+
+    setIsMapLoading(true);
+
+    map.current.geoObjects.remove(mmm);
+
+    yyy.geolocation
       .get({
-        provider: "browser",
+        provider: 'browser',
         mapStateAutoApply: true,
       })
       .then(function (result) {
-        result.geoObjects.options.set("preset", "islands#blueCircleIcon");
+        result.geoObjects.options.set('preset', 'islands#blueCircleIcon');
 
-        const points = [result.geoObjects.position, "Гуниб", "Хунзах"];
+        console.log(...selectedData.destinations);
 
-        const multiRoute = new ymaps.multiRouter.MultiRoute(
+        const points = [
+          result.geoObjects.position,
+          ...selectedData.destinations,
+        ];
+
+        const multiRoute = new yyy.multiRouter.MultiRoute(
           {
             referencePoints: points,
             params: {
-              routingMode: "car",
+              routingMode: 'car',
             },
           },
           {
             boundsAutoApply: true,
             editorDrawOver: false,
-            editorMidPointsType: "via",
+            editorMidPointsType: 'via',
           }
         );
 
-        multiRoute.model.events.add('requestsuccess', function() {
-            const activeRoute = multiRoute.getActiveRoute();
-            console.log("Длина: " + activeRoute.properties.get("distance").text);
-            console.log("Время прохождения: " + activeRoute.properties.get("duration").text);
-            if (activeRoute.properties.get("blocked")) {
-                console.log("На маршруте имеются участки с перекрытыми дорогами.");
-            }
+        multiRoute.model.events.add('requestsuccess', function () {
+          const activeRoute = multiRoute.getActiveRoute();
+          setRouteData({
+            duration: activeRoute.properties.get('distance').text,
+            distance: activeRoute.properties.get('duration').text,
+          });
+
+          console.log('Длина: ' + activeRoute.properties.get('distance').text);
+          console.log(
+            'Время прохождения: ' + activeRoute.properties.get('duration').text
+          );
+          if (activeRoute.properties.get('blocked')) {
+            console.log('На маршруте имеются участки с перекрытыми дорогами.');
+          }
         });
 
+        setMMM(multiRoute);
+
         map.current.geoObjects.add(multiRoute);
-        // console.log(map.current.geoObjects.add(multiRoute));
+        setTimeout(() => {
+          setIsMapLoading(false);
+        }, 1000);
+      });
+  }, [selectedData.destinations, setRouteData, setIsMapLoading]);
+
+  const onLoad = (ymaps) => {
+    setIsMapLoading(true);
+    setYyy(ymaps);
+    ymaps.geolocation
+      .get({
+        provider: 'browser',
+        mapStateAutoApply: true,
+      })
+      .then(function (result) {
+        result.geoObjects.options.set('preset', 'islands#blueCircleIcon');
+
+        console.log(...selectedData.destinations);
+
+        const points = [
+          result.geoObjects.position,
+          ...selectedData.destinations,
+        ];
+
+        const multiRoute = new ymaps.multiRouter.MultiRoute(
+          {
+            referencePoints: points,
+            params: {
+              routingMode: 'car',
+            },
+          },
+          {
+            boundsAutoApply: true,
+            editorDrawOver: false,
+            editorMidPointsType: 'via',
+          }
+        );
+
+        multiRoute.model.events.add('requestsuccess', function () {
+          const activeRoute = multiRoute.getActiveRoute();
+          setRouteData({
+            duration: activeRoute.properties.get('distance').text,
+            distance: activeRoute.properties.get('duration').text,
+          });
+
+          console.log('Длина: ' + activeRoute.properties.get('distance').text);
+          console.log(
+            'Время прохождения: ' + activeRoute.properties.get('duration').text
+          );
+          if (activeRoute.properties.get('blocked')) {
+            console.log('На маршруте имеются участки с перекрытыми дорогами.');
+          }
+        });
+
+        setMMM(multiRoute);
+
+        map.current.geoObjects.add(multiRoute);
+        setTimeout(() => {
+          setIsMapLoading(false);
+        }, 1000);
       });
   };
 
   return (
-    <div className="container-fluid py-4">
-      <div className="container pb-3">
-        <YMaps query={{ apikey: "8595d4e3-4126-4f14-9243-7ff34406a783" }}>
+    <div
+      style={{
+        position: showMap ? 'static' : 'absolute',
+        opacity: showMap ? 1 : 0,
+      }}
+      className='container-fluid py-5'
+    >
+      <div className='container pb-3'>
+        <YMaps query={{ apikey: '8595d4e3-4126-4f14-9243-7ff34406a783' }}>
           <Map
             onBoundChange={(a) => console.log(a)}
-            modules={["multiRouter.MultiRoute", "geolocation", "geocode"]}
+            modules={['multiRouter.MultiRoute', 'geolocation', 'geocode']}
             defaultState={mapState}
-            width="100%"
+            width='100%'
             height={500}
             instanceRef={map}
             onLoad={onLoad}
           >
-            <ZoomControl options={{ float: "left" }} />
-            <SearchControl options={{ float: "right" }} />
+            <ZoomControl options={{ float: 'left' }} />
+            <SearchControl options={{ float: 'right' }} />
             {/* <RouteButton options={{ float: "left" }} /> */}
           </Map>
         </YMaps>

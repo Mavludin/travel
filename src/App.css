@@ -11049,3 +11049,52 @@ input.ant-input-number-input {
 .owl-dot {
   outline: none !important;
 }
+
+.searchResults .road {
+  display: flex;
+  align-items: center;
+
+  font-size: 16px;
+}
+
+.searchResults .road svg {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.searchResults button {
+  color: #7AB730;
+  outline: none;
+}
+
+.searchResults button:hover {
+  color: #7AB730 !important;
+  border-color: #7AB730 !important;
+}
+
+.searchResults .ant-card-head-title {
+  font-size: 16px;
+}
+
+.searchResults .ant-card-head-title svg {
+  width: 24px;
+  margin-right: 6px;
+}
+
+.searchResults .ant-timeline-item {
+  padding-bottom: 10px;
+}
+
+.searchResults .ant-timeline-item-last >.ant-timeline-item-content {
+  min-height: auto;
+}
+
+.searchResults .timeline.ant-card-grid {
+  padding: 24px 24px 0 24px !important;
+}
+
+.spinnerWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

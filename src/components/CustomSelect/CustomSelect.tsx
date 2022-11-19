@@ -1,37 +1,47 @@
-import { Select } from 'antd';
+import { Form, Select } from 'antd';
 import type { SelectProps } from 'antd';
+import { useRef } from 'react';
 
 const options: SelectProps['options'] = [
   {
-    label: "Хунзах",
-    value: "Хунзах"
+    label: 'Хунзах',
+    value: 'Хунзах',
   },
   {
-    label: "Гуниб",
-    value: "Гуниб"
+    label: 'Гуниб',
+    value: 'Гуниб',
   },
   {
-    label: "Бархан",
-    value: "Бархан",
+    label: 'Бархан',
+    value: 'Бархан Сарыкум',
   },
   {
-    label: "Куруш",
-    value: "Куруш",
+    label: 'Куруш',
+    value: 'Куруш',
   },
 ];
 
-const handleChange = (value: string[]) => {
-  console.log(`selected ${value}`);
-};
+export const CustomSelect = () => {
+  const handleChange = (values: string[]) => {
+    console.log(values);
+  };
 
-export const CustomSelect = () => (
-  <Select
-    mode='multiple'
-    allowClear
-    style={{ width: '100%', marginBottom: 15 }}
-    placeholder='Куда едем?'
-    onChange={handleChange}
-    options={options}
-    
-  />
-);
+  const ref = useRef(null);
+  return (
+    <Form.Item
+      name='destinations'
+      rules={[{ required: true, message: 'Выберите куда поехать!' }]}
+      style={{ marginBottom: 30 }}
+    >
+      <Select
+        mode='multiple'
+        allowClear
+        style={{ width: '100%' }}
+        placeholder='Куда едем?'
+        onChange={handleChange}
+        options={options}
+        ref={ref}
+      />
+    </Form.Item>
+  );
+};

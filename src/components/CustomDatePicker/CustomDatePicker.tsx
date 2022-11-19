@@ -1,4 +1,4 @@
-import { DatePicker } from 'antd';
+import { DatePicker, Form } from 'antd';
 import type { DatePickerProps } from 'antd';
 
 const onChange: DatePickerProps['onChange'] = (date, dateString) => {
@@ -7,6 +7,11 @@ const onChange: DatePickerProps['onChange'] = (date, dateString) => {
 
 export const CustomDatePicker = () => {
   return (
-    <DatePicker onChange={onChange} placeholder="Выберите дату" />
+    <Form.Item
+      name='datePicker'
+      rules={[{ required: true, message: 'Выберите дату' }]}
+    >
+      <DatePicker onChange={onChange} placeholder='Выберите дату' />
+    </Form.Item>
   );
 };
