@@ -2,19 +2,18 @@ export const Footer = () => {
   return (
     <>
       <div
-        className='container-fluid bg-dark text-white-50 py-5 px-sm-3 px-lg-5'
+        className='container-fluid bg-dark text-white-50 py-4 px-sm-3 px-lg-5'
         style={{ marginTop: 90 }}
       >
         <div className='row pt-5'>
-          <div className='col-lg-3 col-md-6 mb-5'>
+          <div className='col-lg-4 col-md-6 mb-5'>
             <a href='' className='navbar-brand'>
               <h1 className='text-primary'>
                 <span className='text-white'>DAGEST</span>AN
               </h1>
             </a>
-            <p>
-              Sed ipsum clita tempor ipsum ipsum amet sit ipsum lorem amet
-              labore rebum lorem ipsum dolor. No sed vero lorem dolor dolor
+            <p className="w-75">
+              Путешествуй по Дагестану оптимальными маршрутами
             </p>
             <h6
               className='text-white text-uppercase mt-4 mb-3'
@@ -37,27 +36,27 @@ export const Footer = () => {
               </a>
             </div>
           </div>
-          <div className='col-lg-3 col-md-6 mb-5'>
+          <div className='col-lg-4 col-md-6 mb-5'>
             <h5
               className='text-white text-uppercase mb-4'
               style={{ letterSpacing: 5 }}
             >
-              Our Services
+              Наши услуги
             </h5>
             <div className='d-flex flex-column justify-content-start'>
               <a className='text-white-50 mb-2' href='#'>
-                <i className='fa fa-angle-right mr-2'></i>About
+                <i className='fa fa-angle-right mr-2'></i>О нас
               </a>
               <a className='text-white-50 mb-2' href='#'>
-                <i className='fa fa-angle-right mr-2'></i>Destination
+                <i className='fa fa-angle-right mr-2'></i>Направления
               </a>
               <a className='text-white-50 mb-2' href='#'>
-                <i className='fa fa-angle-right mr-2'></i>Services
+                <i className='fa fa-angle-right mr-2'></i>Блог
               </a>
               <a className='text-white-50 mb-2' href='#'>
-                <i className='fa fa-angle-right mr-2'></i>Packages
+                <i className='fa fa-angle-right mr-2'></i>Контакты
               </a>
-              <a className='text-white-50 mb-2' href='#'>
+              {/* <a className='text-white-50 mb-2' href='#'>
                 <i className='fa fa-angle-right mr-2'></i>Guides
               </a>
               <a className='text-white-50 mb-2' href='#'>
@@ -65,10 +64,10 @@ export const Footer = () => {
               </a>
               <a className='text-white-50' href='#'>
                 <i className='fa fa-angle-right mr-2'></i>Blog
-              </a>
+              </a> */}
             </div>
           </div>
-          <div className='col-lg-3 col-md-6 mb-5'>
+          {/* <div className='col-lg-3 col-md-6 mb-5'>
             <h5
               className='text-white text-uppercase mb-4'
               style={{ letterSpacing: 5 }}
@@ -98,7 +97,7 @@ export const Footer = () => {
                 <i className='fa fa-angle-right mr-2'></i>Blog
               </a>
             </div>
-          </div>
+          </div> */}
           <div className='col-lg-3 col-md-6 mb-5'>
             <h5
               className='text-white text-uppercase mb-4'
@@ -135,20 +134,6 @@ export const Footer = () => {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-      <div
-        className='container-fluid bg-dark text-white border-top py-4 px-sm-3 px-md-5'
-        style={{ borderColor: 'rgba(256, 256, 256, .1) !important' }}
-      >
-        <div className='row'>
-          <div className='col-lg-6 text-center text-md-left mb-3 mb-md-0'>
-            <p className='m-0 text-white-50'>
-              Copyright &copy; <a href='#'>Domain</a>. All Rights Reserved.{' '}
-            </p>
-          </div>
-          <div className='col-lg-6 text-center text-md-right'>
           </div>
         </div>
       </div>

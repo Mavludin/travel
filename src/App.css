@@ -11045,3 +11045,7 @@ input.ant-input-number-input {
 .ant-select-item-option-state {
   color: #7AB730 !important;
 }
+
+.owl-dot {
+  outline: none !important;
+}

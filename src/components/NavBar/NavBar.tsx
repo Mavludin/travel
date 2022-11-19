@@ -14,6 +14,7 @@ export const NavBar = () => {
                         <a href="index.html" className="nav-item nav-link active">Главная</a>
                         <a href="about.html" className="nav-item nav-link">О нас</a>
                         <a href="service.html" className="nav-item nav-link">Направления</a>
+                        <a href="service.html" className="nav-item nav-link">Блог</a>
                         {/* <a href="package.html" className="nav-item nav-link">Туры</a> */}
                         {/* <div className="nav-item dropdown">
                             <a href="#" className="nav-link dropdown-toggle" data-toggle="dropdown">Доп</a>
