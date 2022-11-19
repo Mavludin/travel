@@ -6,6 +6,7 @@ import './App.css';
 import { Booking } from './components/Booking/Booking';
 import { CustomMap } from './components/CustomMap/CustomMap';
 import { Destinations } from './components/Destinations/Destinations';
+import { Footer } from './components/Footer/Footer';
 import { Header } from './components/Header/Header';
 import { NavBar } from './components/NavBar/NavBar';
 import { Testimonials } from './components/Testimonials/Testimonials';
@@ -32,6 +33,7 @@ function App() {
       <CustomMap />
       <Destinations />
       <Testimonials />
+      <Footer />
     </div>
   );
 }
