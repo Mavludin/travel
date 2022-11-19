@@ -1,5 +1,3 @@
-import React from 'react'
-
 export const Header = () => {
   return (
     <div className="container-fluid bg-light pt-3 d-none d-lg-block">
