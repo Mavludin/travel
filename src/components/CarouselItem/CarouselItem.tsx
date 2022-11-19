@@ -1,3 +1,5 @@
+import { DownOutlined } from "@ant-design/icons";
+
 type Props = {
   imgSrc: string;
   subTitle: string;
@@ -13,12 +15,14 @@ export const CarouselItem = ({ imgSrc, title, subTitle, scrollToBooking }: Props
         <div className="p-3" style={{ maxWidth: 900 }}>
           <h4 className="text-white text-uppercase mb-md-3">{subTitle}</h4>
           <h1 className="display-3 text-white mb-md-4">{title}</h1>
-
           <a
             onClick={scrollToBooking}
             className="btn btn-primary py-md-3 px-md-5 mt-2 sliderBtn"
           >
-            Поехали
+            <div className="d-flex align-items-center">
+            <span className="pr-3">Поехали</span>
+            <DownOutlined />
+            </div>
           </a>
         </div>
       </div>
