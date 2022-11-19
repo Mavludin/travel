@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 export const NavBar = () => {
   return (
     <div className="container-fluid position-relative nav-bar p-0">
@@ -11,8 +13,8 @@ export const NavBar = () => {
                 </button>
                 <div className="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
                     <div className="navbar-nav ml-auto py-0">
-                        <a href="index.html" className="nav-item nav-link active">Главная</a>
-                        <a href="about.html" className="nav-item nav-link">О нас</a>
+                        <Link to="/" className="nav-item nav-link active">Главная</Link>
+                        <Link to="/about" className="nav-item nav-link">О нас</Link>
                         <a href="service.html" className="nav-item nav-link">Направления</a>
                         <a href="service.html" className="nav-item nav-link">Блог</a>
                         {/* <a href="package.html" className="nav-item nav-link">Туры</a> */}
@@ -26,7 +28,7 @@ export const NavBar = () => {
                                 <a href="testimonial.html" className="dropdown-item">Testimonial</a>
                             </div>
                         </div> */}
-                        <a href="contact.html" className="nav-item nav-link">Контакты</a>
+                        <Link to="/contact" className="nav-item nav-link">Контакты</Link>
                     </div>
                 </div>
             </nav>
