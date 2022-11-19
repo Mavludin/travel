@@ -11025,3 +11025,23 @@ input.ant-input-number-input {
 .ant-picker:hover {
   border-color: #7AB730 !important;
 }
+
+.ant-select-item-option-selected {
+  background-color: #f0ffe6 !important;
+}
+
+.ant-select-open .ant-select-selector {
+  border-color: #7AB730 !important;
+}
+
+.ant-picker-cell-inner::before {
+  border-color: #7AB730 !important;
+}
+
+.ant-picker-cell-selected .ant-picker-cell-inner {
+  background-color: #7AB730 !important;
+}
+
+.ant-select-item-option-state {
+  color: #7AB730 !important;
+}
