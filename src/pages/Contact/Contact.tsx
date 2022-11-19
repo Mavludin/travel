@@ -9,9 +9,9 @@ export const Contact = () => {
             className='text-primary text-uppercase'
             style={{ letterSpacing: 5 }}
           >
-            Contact
+            Контакты
           </h6>
-          <h1>Contact For Any Query</h1>
+          <h1>Ответим на ваши вопросы</h1>
         </div>
         <div className='row justify-content-center'>
           <div className='col-lg-8'>
@@ -24,7 +24,7 @@ export const Contact = () => {
                       type='text'
                       className='form-control p-4'
                       id='name'
-                      placeholder='Your Name'
+                      placeholder='Имя'
                       required
                       data-validation-required-message='Please enter your name'
                     />
@@ -35,7 +35,7 @@ export const Contact = () => {
                       type='email'
                       className='form-control p-4'
                       id='email'
-                      placeholder='Your Email'
+                      placeholder='Email'
                       required
                       data-validation-required-message='Please enter your email'
                     />
@@ -47,7 +47,7 @@ export const Contact = () => {
                     type='text'
                     className='form-control p-4'
                     id='subject'
-                    placeholder='Subject'
+                    placeholder='Описание'
                     required
                     data-validation-required-message='Please enter a subject'
                   />
@@ -58,7 +58,7 @@ export const Contact = () => {
                     className='form-control py-3 px-4'
                     rows={5}
                     id='message'
-                    placeholder='Message'
+                    placeholder='Сообщение'
                     required
                     data-validation-required-message='Please enter your message'
                   ></textarea>
@@ -70,7 +70,7 @@ export const Contact = () => {
                     type='submit'
                     id='sendMessageButton'
                   >
-                    Send Message
+                    Отправить
                   </button>
                 </div>
               </form>
