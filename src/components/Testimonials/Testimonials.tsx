@@ -1,6 +1,5 @@
 import { useState } from 'react';
 
-import { Carousel } from 'react-responsive-carousel';
 import test1 from '../../assets/img/testimonial-1.jpg';
 import test2 from '../../assets/img/testimonial-2.jpg';
 import test3 from '../../assets/img/testimonial-3.jpg';
@@ -50,7 +49,30 @@ export const Testimonials = () => {
           </h6>
           <h1>What Say Our Clients</h1>
         </div>
-        <OwlCarousel className='owl-carousel testimonial-carousel'>
+        <OwlCarousel
+          className='testimonial-carousel'
+          dots
+          loop
+          smartSpeed={1500}
+          margin={30}
+          dotClass="owl-dot"
+          autoPlay
+          center
+          responsive={{
+            0: {
+              items: 1,
+            },
+            576: {
+              items: 1,
+            },
+            768: {
+              items: 2,
+            },
+            992: {
+              items: 3,
+            },
+          }}
+        >
           <div className='text-center pb-4'>
             <img
               className='img-fluid mx-auto'
