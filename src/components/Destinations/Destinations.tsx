@@ -10,7 +10,7 @@ export const Destinations = () => {
     <div className="container-fluid py-5">
         <div className="container pt-5 pb-3">
             <div className="text-center mb-3 pb-3">
-                <h6 className="text-primary text-uppercase" style={{ letterSpacing: 5 }}>Destination</h6>
+                <h6 className="text-primary text-uppercase" style={{ letterSpacing: 5 }}>Вы можете выбрать</h6>
                 <h1>Популярные направления</h1>
             </div>
             <div className="row">
@@ -18,7 +18,7 @@ export const Destinations = () => {
                     <div className="destination-item position-relative overflow-hidden mb-2">
                         <img className="img-fluid" src={dest1} alt="" />
                         <a className="destination-overlay text-white text-decoration-none" href="">
-                            <h5 className="text-white">United States</h5>
+                            <h3 className="text-white text-center">Сулакский <br/> каньон</h3>
                             
                         </a>
                     </div>
@@ -27,7 +27,7 @@ export const Destinations = () => {
                     <div className="destination-item position-relative overflow-hidden mb-2">
                         <img className="img-fluid" src={dest2} alt="" />
                         <a className="destination-overlay text-white text-decoration-none" href="">
-                            <h5 className="text-white">United Kingdom</h5>
+                            <h3 className="text-white">Ахульго</h3>
                             
                         </a>
                     </div>
@@ -36,7 +36,7 @@ export const Destinations = () => {
                     <div className="destination-item position-relative overflow-hidden mb-2">
                         <img className="img-fluid" src={dest3} alt="" />
                         <a className="destination-overlay text-white text-decoration-none" href="">
-                            <h5 className="text-white">Australia</h5>
+                            <h3 className="text-white">Мочох</h3>
                             
                         </a>
                     </div>
@@ -45,7 +45,7 @@ export const Destinations = () => {
                     <div className="destination-item position-relative overflow-hidden mb-2">
                         <img className="img-fluid" src={dest4} alt="" />
                         <a className="destination-overlay text-white text-decoration-none" href="">
-                            <h5 className="text-white">India</h5>
+                            <h3 className="text-white">Гамсутль</h3>
                             
                         </a>
                     </div>
@@ -54,7 +54,7 @@ export const Destinations = () => {
                     <div className="destination-item position-relative overflow-hidden mb-2">
                         <img className="img-fluid" src={dest5} alt="" />
                         <a className="destination-overlay text-white text-decoration-none" href="">
-                            <h5 className="text-white">South Africa</h5>
+                            <h3 className="text-white">Гуниб</h3>
                             
                         </a>
                     </div>
@@ -63,7 +63,7 @@ export const Destinations = () => {
                     <div className="destination-item position-relative overflow-hidden mb-2">
                         <img className="img-fluid" src={dest6} alt="" />
                         <a className="destination-overlay text-white text-decoration-none" href="">
-                            <h5 className="text-white">Indonesia</h5>
+                            <h3 className="text-white">Унцукуль</h3>
                             
                         </a>
                     </div>

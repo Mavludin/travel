@@ -20,13 +20,13 @@ export const Header = () => {
                     <a className="text-primary px-3" href="">
                         <i className="fab fa-twitter"></i>
                     </a> */}
-                    <a className="text-primary px-3" href="">
+                    <a className="text-primary px-2" href="">
                         <i className="fab fa-telegram"></i>
                     </a>
-                    <a className="text-primary px-3" href="">
+                    <a className="text-primary px-2" href="">
                         <i className="fab fa-whatsapp"></i>
                     </a>
-                    <a className="text-primary pl-3" href="">
+                    <a className="text-primary pl-2" href="">
                         <i className="fab fa-youtube"></i>
                     </a>
                 </div>

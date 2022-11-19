@@ -20,20 +20,20 @@ export const Footer = () => {
               className='text-white text-uppercase mt-4 mb-3'
               style={{ letterSpacing: 5 }}
             >
-              Follow Us
+              Где нас искать
             </h6>
             <div className='d-flex justify-content-start'>
-              <a className='btn btn-outline-primary btn-square mr-2' href='#'>
+              {/* <a className='btn btn-outline-primary btn-square mr-2' href='#'>
                 <i className='fab fa-twitter'></i>
+              </a> */}
+              <a className='btn btn-outline-primary btn-square mr-2' href='#'>
+                <i className='fab fa-telegram'></i>
               </a>
               <a className='btn btn-outline-primary btn-square mr-2' href='#'>
-                <i className='fab fa-facebook-f'></i>
-              </a>
-              <a className='btn btn-outline-primary btn-square mr-2' href='#'>
-                <i className='fab fa-linkedin-in'></i>
+                <i className='fab fa-whatsapp'></i>
               </a>
               <a className='btn btn-outline-primary btn-square' href='#'>
-                <i className='fab fa-instagram'></i>
+                <i className='fab fa-youtube'></i>
               </a>
             </div>
           </div>
@@ -77,7 +77,7 @@ export const Footer = () => {
             </h5>
             <div className='d-flex flex-column justify-content-start'>
               <a className='text-white-50 mb-2' href='#'>
-                <i className='fa fa-angle-right mr-2'></i>About
+                <i className='fa fa-angle-right mr-2'></i>О нас
               </a>
               <a className='text-white-50 mb-2' href='#'>
                 <i className='fa fa-angle-right mr-2'></i>Destination
@@ -104,23 +104,23 @@ export const Footer = () => {
               className='text-white text-uppercase mb-4'
               style={{ letterSpacing: 5 }}
             >
-              Contact Us
+              Наши контакты
             </h5>
-            <p>
+            {/* <p>
               <i className='fa fa-map-marker-alt mr-2'></i>123 Street, New York,
               USA
-            </p>
+            </p> */}
             <p>
               <i className='fa fa-phone-alt mr-2'></i>+012 345 67890
             </p>
             <p>
-              <i className='fa fa-envelope mr-2'></i>info@example.com
+              <i className='fa fa-envelope mr-2'></i>dagestan@example.com
             </p>
             <h6
               className='text-white text-uppercase mt-4 mb-3'
               style={{ letterSpacing: 5 }}
             >
-              Newsletter
+              Подписаться
             </h6>
             <div className='w-100'>
               <div className='input-group'>
@@ -128,10 +128,10 @@ export const Footer = () => {
                   type='text'
                   className='form-control border-light'
                   style={{ padding: 25 }}
-                  placeholder='Your Email'
+                  placeholder='Email'
                 />
                 <div className='input-group-append'>
-                  <button className='btn btn-primary px-3'>Sign Up</button>
+                  <button className='btn btn-primary px-3'>Отправить</button>
                 </div>
               </div>
             </div>
@@ -149,9 +149,6 @@ export const Footer = () => {
             </p>
           </div>
           <div className='col-lg-6 text-center text-md-right'>
-            <p className='m-0 text-white-50'>
-              Designed by <a href='https://htmlcodex.com'>HTML Codex</a>
-            </p>
           </div>
         </div>
       </div>

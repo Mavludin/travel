@@ -51,7 +51,8 @@ export const Booking = forwardRef((props, ref: any) => {
                 type='submit'
                 style={{ height: 47, marginTop: -2 }}
               >
-                Поехали
+                Поиск
+                {/* <DownOutlined /> */}
               </button>
             </div>
           </div>

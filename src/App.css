@@ -9835,3 +9835,7 @@ input.ant-input-number-input {
 .carousel-inner {
   height: 1000px;
 }
+
+.ant-select-selector:hover, .ant-picker-focused, .ant-input-number:hover, .ant-input-number-focused, .ant-select-focused {
+  border-color: #7AB730 !important;
+}
