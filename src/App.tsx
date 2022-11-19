@@ -11,6 +11,7 @@ import { Header } from './components/Header/Header';
 import { NavBar } from './components/NavBar/NavBar';
 import { Testimonials } from './components/Testimonials/Testimonials';
 import { TopCarousel } from './components/TopCarousel/TopCarousel';
+import { About } from './pages/About/About';
 
 function App() {
 
