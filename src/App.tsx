@@ -12,6 +12,7 @@ import { NavBar } from './components/NavBar/NavBar';
 import { Testimonials } from './components/Testimonials/Testimonials';
 import { TopCarousel } from './components/TopCarousel/TopCarousel';
 import { About } from './pages/About/About';
+import { Contact } from './pages/Contact/Contact';
 
 function App() {
 
