@@ -4,7 +4,6 @@ import { CarouselItem } from "../CarouselItem/CarouselItem";
 import { NextArrow } from "../NextArrow/NextArrow";
 import { PrevArrow } from "../PrevArrow/PrevArrow";
 
-
 const CAROUSEL_ITEMS = [
   {
     id: 1,
