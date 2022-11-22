@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 import { Booking } from '../../components/Booking/Booking';
 import { CustomMap } from '../../components/CustomMap/CustomMap';
 import { Destinations } from '../../components/Destinations/Destinations';
@@ -26,8 +26,6 @@ export const Home = () => {
   const [isMapLoading, setIsMapLoading] = useState(false);
 
   const bookingRef = useRef<HTMLDivElement>(null);
-
-  console.log(routeData);
 
   const scrollToBooking = () => {
     if (!bookingRef.current) return;

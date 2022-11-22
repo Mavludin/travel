@@ -22,9 +22,6 @@ const options: SelectProps['options'] = [
 ];
 
 export const CustomSelect = () => {
-  const handleChange = (values: string[]) => {
-    console.log(values);
-  };
 
   const ref = useRef(null);
   return (
@@ -38,7 +35,6 @@ export const CustomSelect = () => {
         allowClear
         style={{ width: '100%' }}
         placeholder='Куда едем?'
-        onChange={handleChange}
         options={options}
         ref={ref}
       />

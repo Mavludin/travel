@@ -13,6 +13,7 @@ export const About = () => {
                   className='position-absolute w-100 h-100'
                   src={aboutImg}
                   style={{ objectFit: 'cover' }}
+                  alt=''
                 />
               </div>
             </div>
@@ -24,18 +25,14 @@ export const About = () => {
                 >
                   О нас
                 </h6>
-                <h1 className='mb-3'>
-                  Путешествуй без границ
-                </h1>
-                <p>
-                  Вместе с нами будет намного легче!
-                </p>
+                <h1 className='mb-3'>Путешествуй без границ</h1>
+                <p>Вместе с нами будет намного легче!</p>
                 <div className='mb-4 d-flex justify-content-center'>
                   <div className='col-11'>
                     <img className='img-fluid' src={img2} alt='' />
                   </div>
                 </div>
-                <a href='' className='btn btn-primary mt-1'>
+                <a href='/' className='btn btn-primary mt-1'>
                   Поехали!
                 </a>
               </div>
@@ -73,7 +70,8 @@ export const About = () => {
                 <div className='d-flex flex-column'>
                   <h5 className=''>Удобно</h5>
                   <p className='m-0'>
-                    Наш сервис позволяет максимально быстро и просто получить ответы
+                    Наш сервис позволяет максимально быстро и просто получить
+                    ответы
                   </p>
                 </div>
               </div>

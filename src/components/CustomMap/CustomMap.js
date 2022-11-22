@@ -31,8 +31,6 @@ export const CustomMap = ({
       .then(function (result) {
         result.geoObjects.options.set('preset', 'islands#blueCircleIcon');
 
-        console.log(...selectedData.destinations);
-
         const points = [
           result.geoObjects.position,
           ...selectedData.destinations,
@@ -59,13 +57,6 @@ export const CustomMap = ({
             distance: activeRoute.properties.get('duration').text,
           });
 
-          console.log('Длина: ' + activeRoute.properties.get('distance').text);
-          console.log(
-            'Время прохождения: ' + activeRoute.properties.get('duration').text
-          );
-          if (activeRoute.properties.get('blocked')) {
-            console.log('На маршруте имеются участки с перекрытыми дорогами.');
-          }
         });
 
         setMMM(multiRoute);
@@ -75,7 +66,7 @@ export const CustomMap = ({
           setIsMapLoading(false);
         }, 1000);
       });
-  }, [selectedData.destinations, setRouteData, setIsMapLoading]);
+  }, [mmm, selectedData.destinations, setIsMapLoading, setRouteData, yyy]);
 
   const onLoad = (ymaps) => {
     setIsMapLoading(true);
@@ -87,8 +78,6 @@ export const CustomMap = ({
       })
       .then(function (result) {
         result.geoObjects.options.set('preset', 'islands#blueCircleIcon');
-
-        console.log(...selectedData.destinations);
 
         const points = [
           result.geoObjects.position,
@@ -115,14 +104,6 @@ export const CustomMap = ({
             duration: activeRoute.properties.get('distance').text,
             distance: activeRoute.properties.get('duration').text,
           });
-
-          console.log('Длина: ' + activeRoute.properties.get('distance').text);
-          console.log(
-            'Время прохождения: ' + activeRoute.properties.get('duration').text
-          );
-          if (activeRoute.properties.get('blocked')) {
-            console.log('На маршруте имеются участки с перекрытыми дорогами.');
-          }
         });
 
         setMMM(multiRoute);
@@ -145,7 +126,6 @@ export const CustomMap = ({
       <div className='container pb-3'>
         <YMaps query={{ apikey: '8595d4e3-4126-4f14-9243-7ff34406a783' }}>
           <Map
-            onBoundChange={(a) => console.log(a)}
             modules={['multiRouter.MultiRoute', 'geolocation', 'geocode']}
             defaultState={mapState}
             width='100%'

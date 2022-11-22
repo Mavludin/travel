@@ -7,12 +7,12 @@ export const Footer = () => {
       >
         <div className='row pt-5'>
           <div className='col-lg-4 col-md-6 mb-5'>
-            <a href='' className='navbar-brand'>
+            <a href='/' className='navbar-brand'>
               <h1 className='text-primary'>
                 <span className='text-white'>DAGEST</span>AN
               </h1>
             </a>
-            <p className="w-75">
+            <p className='w-75'>
               Путешествуй по Дагестану оптимальными маршрутами
             </p>
             <h6
@@ -22,16 +22,16 @@ export const Footer = () => {
               Где нас искать
             </h6>
             <div className='d-flex justify-content-start'>
-              {/* <a className='btn btn-outline-primary btn-square mr-2' href='#'>
+              {/* <a className='btn btn-outline-primary btn-square mr-2' href='/'>
                 <i className='fab fa-twitter'></i>
               </a> */}
-              <a className='btn btn-outline-primary btn-square mr-2' href='#'>
+              <a className='btn btn-outline-primary btn-square mr-2' href='/'>
                 <i className='fab fa-telegram'></i>
               </a>
-              <a className='btn btn-outline-primary btn-square mr-2' href='#'>
+              <a className='btn btn-outline-primary btn-square mr-2' href='/'>
                 <i className='fab fa-whatsapp'></i>
               </a>
-              <a className='btn btn-outline-primary btn-square' href='#'>
+              <a className='btn btn-outline-primary btn-square' href='/'>
                 <i className='fab fa-youtube'></i>
               </a>
             </div>
@@ -44,25 +44,25 @@ export const Footer = () => {
               Наши услуги
             </h5>
             <div className='d-flex flex-column justify-content-start'>
-              <a className='text-white-50 mb-2' href='#'>
+              <a className='text-white-50 mb-2' href='/'>
                 <i className='fa fa-angle-right mr-2'></i>О нас
               </a>
-              <a className='text-white-50 mb-2' href='#'>
+              <a className='text-white-50 mb-2' href='/'>
                 <i className='fa fa-angle-right mr-2'></i>Направления
               </a>
-              <a className='text-white-50 mb-2' href='#'>
+              <a className='text-white-50 mb-2' href='/'>
                 <i className='fa fa-angle-right mr-2'></i>Блог
               </a>
-              <a className='text-white-50 mb-2' href='#'>
+              <a className='text-white-50 mb-2' href='/'>
                 <i className='fa fa-angle-right mr-2'></i>Контакты
               </a>
-              {/* <a className='text-white-50 mb-2' href='#'>
+              {/* <a className='text-white-50 mb-2' href='/'>
                 <i className='fa fa-angle-right mr-2'></i>Guides
               </a>
-              <a className='text-white-50 mb-2' href='#'>
+              <a className='text-white-50 mb-2' href='/'>
                 <i className='fa fa-angle-right mr-2'></i>Testimonial
               </a>
-              <a className='text-white-50' href='#'>
+              <a className='text-white-50' href='/'>
                 <i className='fa fa-angle-right mr-2'></i>Blog
               </a> */}
             </div>
@@ -75,25 +75,25 @@ export const Footer = () => {
               Usefull Links
             </h5>
             <div className='d-flex flex-column justify-content-start'>
-              <a className='text-white-50 mb-2' href='#'>
+              <a className='text-white-50 mb-2' href='/'>
                 <i className='fa fa-angle-right mr-2'></i>О нас
               </a>
-              <a className='text-white-50 mb-2' href='#'>
+              <a className='text-white-50 mb-2' href='/'>
                 <i className='fa fa-angle-right mr-2'></i>Destination
               </a>
-              <a className='text-white-50 mb-2' href='#'>
+              <a className='text-white-50 mb-2' href='/'>
                 <i className='fa fa-angle-right mr-2'></i>Services
               </a>
-              <a className='text-white-50 mb-2' href='#'>
+              <a className='text-white-50 mb-2' href='/'>
                 <i className='fa fa-angle-right mr-2'></i>Packages
               </a>
-              <a className='text-white-50 mb-2' href='#'>
+              <a className='text-white-50 mb-2' href='/'>
                 <i className='fa fa-angle-right mr-2'></i>Guides
               </a>
-              <a className='text-white-50 mb-2' href='#'>
+              <a className='text-white-50 mb-2' href='/'>
                 <i className='fa fa-angle-right mr-2'></i>Testimonial
               </a>
-              <a className='text-white-50' href='#'>
+              <a className='text-white-50' href='/'>
                 <i className='fa fa-angle-right mr-2'></i>Blog
               </a>
             </div>
